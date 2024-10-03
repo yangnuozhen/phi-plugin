@@ -39,6 +39,7 @@ class getdata {
 
         /**含有曲绘的曲目列表，原曲名称 */
         this.illlist = getInfo.illlist
+        logger.mark("getdata.js 返回属性 illlist.length = " + this.illlist.length)
 
         /**所有曲目曲名列表 */
         this.songlist = getInfo.songlist

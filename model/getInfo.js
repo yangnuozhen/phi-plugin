@@ -162,7 +162,8 @@ export default new class getInfo {
                 }
             }
             this.illlist.push(CsvInfo[i].song)
-            logger.mark("Added" + i + "songs (常规)")
+            logger.mark("Added" + i + "songs (csv常规)")
+            logger.mark("当前illlist.length = " + this.illlist.length)
             this.songlist.push(CsvInfo[i].song)
         }
 
