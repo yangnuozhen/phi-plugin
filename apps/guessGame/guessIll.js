@@ -1,14 +1,14 @@
-import common from '../../../../lib/common/common.js'
-import Config from '../../components/Config.js'
-import get from '../../model/getdata.js'
-import send from '../../model/send.js'
+import common from '../../../../lib/common/common.js';
+import Config from '../../components/Config.js';
+import get from '../../model/getdata.js';
+import send from '../../model/send.js';
 
 let songsname = get.illlist
 let songweights = {} //存储每首歌曲被抽取的权重
 
 //曲目初始洗牌
 
-logger.mark(songsname.length);
+logger.mark(songsname.length)
 shuffleArray(songsname)
 
 let gamelist = {}
