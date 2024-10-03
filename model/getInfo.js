@@ -165,7 +165,7 @@ export default new class getInfo {
             logger.mark("Added" + i + "songs (csv常规)")
             logger.mark("当前illlist.length = " + this.illlist.length)
             // 到这里都ok，但是传到getdata.js 后 this.illlist 变成undefined。。
-            
+
             this.songlist.push(CsvInfo[i].song)
         }
 
@@ -175,7 +175,7 @@ export default new class getInfo {
 
         /**jrrp */
         this.word = await readFile.FileReader(path.join(infoPath, 'jrrp.json'))
-
+        logger.mark("init()方法已经结束。")
     }
 
     /**
