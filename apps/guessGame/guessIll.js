@@ -7,6 +7,7 @@ let songsname = get.illlist
 let songweights = {} //存储每首歌曲被抽取的权重
 
 //曲目初始洗牌
+
 logger.mark(songsname.length);
 shuffleArray(songsname)
 
