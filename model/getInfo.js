@@ -84,14 +84,16 @@ export default new class getInfo {
         /**原曲名称获取id */
         this.idssong = {}
         /**含有曲绘的曲目列表，原曲名称 */
+        logger.mark("Initing illlist array...")
         this.illlist = []
-
+        logger.mark("Inited illlist array...")
         /**自定义信息 */
         let user_song = Config.getUserCfg('otherinfo')
         if (Config.getUserCfg('config', 'otherinfo')) {
             for (let i in user_song) {
                 if (user_song[i]['illustration_big']) {
                     this.illlist.push(user_song[i].song)
+                    logger.mark("Added" + i + "songs (自定义)")
                 }
             }
         }
@@ -101,6 +103,7 @@ export default new class getInfo {
         for (let i in this.sp_info) {
             if (this.sp_info[i]['illustration_big']) {
                 this.illlist.push(this.sp_info[i].song)
+                logger.mark("Added" + i + "songs (SP)")
             }
         }
 
@@ -159,6 +162,7 @@ export default new class getInfo {
                 }
             }
             this.illlist.push(CsvInfo[i].song)
+            logger.mark("Added" + i + "songs (常规)")
             this.songlist.push(CsvInfo[i].song)
         }
 
