@@ -7,7 +7,7 @@ let songsname = get.illlist
 let songweights = {} //存储每首歌曲被抽取的权重
 
 //曲目初始洗牌
-logger.mark(songsname);
+logger.mark(songsname.length);
 shuffleArray(songsname)
 
 let gamelist = {}
@@ -374,7 +374,7 @@ function gave_a_tip(known_info, remain_info, songs_info, fnc) {
 
 //将数组顺序打乱
 function shuffleArray(arr) {
-    logger.mark(arr);
+    logger.mark(arr.length);
     for (let i = arr.length - 1; i > 0; i--) {
         const j = randint(0, i)
         const temp = arr[i]
