@@ -9,7 +9,7 @@ import { Level, MAX_DIFFICULTY } from './constNum.js'
 
 export default new class getInfo {
     constructor() {
-        this.init()
+        this.ready = this.init()
     }
 
     async init() {

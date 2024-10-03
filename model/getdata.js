@@ -21,7 +21,13 @@ class getdata {
 
 
     constructor() {
+        this.init();
 
+    }
+
+    async init() {
+        await getInfo.ready
+        logger.mark("getInfo inited ready.")
         this.Level = getInfo.Level //难度映射
 
         /**头像id */
@@ -42,10 +48,6 @@ class getdata {
 
         /**所有曲目曲名列表 */
         this.songlist = getInfo.songlist
-    }
-
-    async init() {
-
         try {
             if (await readFile.FileReader(path.join(_path, 'user_token.json')) || !(await redis.keys("phiPlugin:userToken:*"))[0]) {
                 /**之前写错了，一不小心把.json的文件也当成文件夹创建了，这里要去清除空文件夹 */
