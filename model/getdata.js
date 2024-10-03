@@ -44,7 +44,7 @@ class getdata {
             // 从这里illlist传出来全部变成undefined。。
             logger.mark("getdata.js 取得属性 getInfo.illlist.length = " + getInfo.illlist.length)
             logger.mark("getdata.js 返回属性 illlist.length = " + this.illlist.length)
-        })();
+        })()
 
         /**所有曲目曲名列表 */
         this.songlist = getInfo.songlist
