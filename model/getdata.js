@@ -38,13 +38,13 @@ class getdata {
 
 
         /**含有曲绘的曲目列表，原曲名称 */
-        (async () => {
+        async () => {
             await getInfo.ready; // 确保初始化完成
             this.illlist = getInfo.illlist
             // 从这里illlist传出来全部变成undefined。。
             logger.mark("getdata.js 取得属性 getInfo.illlist.length = " + getInfo.illlist.length)
             logger.mark("getdata.js 返回属性 illlist.length = " + this.illlist.length)
-        })()
+        }
 
         /**所有曲目曲名列表 */
         this.songlist = getInfo.songlist
